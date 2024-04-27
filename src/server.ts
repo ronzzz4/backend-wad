@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({
     credentials:true,
-    origin:["http://13.51.79.177:4000"]
+    origin:["http://13.51.79.177:4200"]
 }));
 
 app.use("/api/foods", foodRouter);
