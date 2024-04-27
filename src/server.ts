@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({
     credentials:true,
-    origin:["http://13.48.58.93:4200"]
+    origin:["http://13.51.79.177:4200"]
 }));
 
 app.use("/api/foods", foodRouter);
@@ -27,5 +27,5 @@ app.use("/api/orders", orderRouter);
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
-    console.log("Website served on http://localhost:" + port);
+    console.log("Website served on http://13.51.79.177:" + port);
 })
